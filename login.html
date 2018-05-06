@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Para que el texto pueda leer símbolos como la ñ y los acentos-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<meta name="description" content="Primer Proyecto de Programación Web">
+	<meta name="keywords" content="Universidad">
+			
+	<title>Login</title>
+			
+	<!-- Icono de Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
+			
+	<!-- Hoja de estilos -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+	<br/>
+	<header>
+		<div id="menu">
+			<ul>
+				<a href="index.html"> Index </a>
+				<a href="login.html"> Log In </a>
+				<a href="registro.html"> Register </a>
+			</ul>
+		</div>
+	</header>
+	<br/>
+	<br/>
+
+	<h1>Log In</h1>
+	 <form action="validacion.php" method="post" class="form-register"> 
+		<h2 class="form_titulo">
+			Inicio de sesión
+		</h2>
+
+		<div class="contenedor-inputs">
+			<input type="text" id="usuario" name="usuario" placeholder="usuario" class="input-100">
+			<input type="password" id="password" name="password" placeholder="password" class="input-100">
+			<input type="submit" value="Acceder" class="btn-enviar">
+		</div>
+	</form>
+
+	<footer>
+		<p>Texto de footer</p>
+	</footer>
+</body>
+</html>

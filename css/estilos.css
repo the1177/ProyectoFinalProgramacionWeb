@@ -1,0 +1,205 @@
+*{ /* Se aplica en toda la pagina */
+	padding: 0; 
+	margin: 0;
+}
+
+header{
+	background: #F8F9F9;
+	box-shadow: 1px 1px 5px #000;
+	height: 80px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+/* Las casillas del formulario*/
+input{
+    display: block;
+    padding: 10px;
+    width: 90%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#logo{
+	float: left;
+}
+
+#menu{
+	/*width:500px;*/
+	text-align: center;
+	padding-top: 28px;
+	margin:20px auto;
+}
+
+#menu ul a{
+	color:white;
+	text-decoration: none; /* Quitar la linea*/
+	font-size: 20px;
+	font-family: times new roman;
+	padding: 20px;
+	margin: 3px;
+	background: black;
+}
+
+#formulario{
+    margin: auto;
+    width: 50;
+    max-width: 600px;
+    background: #F8F9F9;
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/*Detalles estéticos*/
+#franja{
+    padding: 20px;
+    margin-top: 5px;
+    height: 100px;
+    background-color: black ;
+    /*border: 3px solid #7B241C;*/
+}
+
+#franja2{
+    margin-top: 5px;
+    height: 130px;
+    background-color: black ;
+    /*border: 3px solid #7B241C;*/
+}
+
+/*Alineaciones*/
+#centro{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    /*border: 3px solid #EC7063 ;*/
+    padding: 10px;
+ }
+
+#izquierda{
+    float: left;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 200px;
+    /*border: 3px solid #7B241C;*/
+    padding: 10px;
+    
+}
+
+#derecha{
+    float: right;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 200px;
+    /*border: 3px solid #7B241C;*/
+    padding: 10px;
+}
+
+/*Acomodo de las redes sociales*/
+#redes{
+    float: left;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 500px;
+    height: 115px;
+    /*border: 3px solid #7B241C;*/
+}
+/*Acomodo de contacto*/
+#contacto{
+    float: right;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 500px;
+    height: 115px;
+    /*border: 3px solid #7B241C;*/
+    padding: 2px;
+}
+
+#tabla{
+    padding: 20px;
+}
+
+#imagenes{
+    float: left;
+    padding-left: 40px;
+}
+
+/*Algunos títulos*/
+.titulo2{
+	color: #ECF0F1;
+	text-align: center;
+}
+
+
+/*Tamaño de imágenes*/
+.logos2{
+	width: 50px;
+}
+
+
+.galeria1{
+    width: 150px;
+}
+
+.galeria2{
+    width: 350px;
+}
+
+/*Botones*/
+
+.button {
+    background-color: #5D6D7E; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+
+/*Para los párrafos y texto*/
+ .informacion{
+	font-family: verdana;
+	text-align: justify;
+}
+
+ .informacion2{
+	font-family: verdana;
+	text-align: justify;
+	color: white;
+}
+
+ .reloj{
+    border: 3px solid #ECF0F1;
+    margin-right: 500px;
+    margin-left: 500px;
+    font-family: verdana;
+    text-align: center;
+    color: white;
+    padding: 2px;
+}
