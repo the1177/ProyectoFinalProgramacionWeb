@@ -17,8 +17,10 @@ require 'crud.php';
 	<!-- Icono de Favicon -->
 	<link rel="shortcut icon" type="image/ico" href="/img/favicon.ico"/>
 					
-	<!-- Hoja de estilos -->
+	<!-- Hoja de estilos y archivos JS -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="/js/validacion.js"></script>
+
 </head>
 
 <body>
@@ -30,7 +32,7 @@ require 'crud.php';
 			<ul>
 					<a href="index.html"> Index </a>
 					<a href="login.html"> Log In </a>
-					<a href="registro.html"> Register </a>
+					<a href="registro.php"> Register </a>
 			</ul>
 		</div>
 	</header>
@@ -46,11 +48,12 @@ require 'crud.php';
 		</h2>
 
 		<div class="contenedor-inputs">
+			<input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-100">
 			<input type="email" id="correo" name="correo" placeholder="Correo" class="input-100">
 			<input type="password" id="pass1" name="pass1" placeholder="Contraseña" class="input-48">
 			<input type="password" id="pass2" name="pass2" placeholder="Repite Contraseña" class="input-48">
 
-			<input type="submit" value="click" class="btn-enviar" onclick= "validar();" name="submitRegistro">
+			<input type="submit" value="click" class="btn-enviar" onclick= "validar()" name="submitRegistro">
 			<p class="form_link">¿Ya tienes una cuenta? <a href=login.html> Ingresa aqui</a></p>
 		</div>
 	</form>
