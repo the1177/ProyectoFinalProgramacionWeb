@@ -65,6 +65,7 @@ input{
 
 .input-100{
 	width: 100%;
+	border-radius: 5px;
 }
 
 .btn-enviar{
@@ -92,7 +93,7 @@ input{
 
 .informacion{
 	font-family: verdana;
-	text-align: justify;
+	text-align: center;
 }
 
 .bienvenido{
@@ -172,10 +173,12 @@ input{
 }
 
 #franja{
+	color: white;
     padding: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     height: 100px;
-    background-color: black ;
+	background-color: black ;
+	text-align: center;
     /*border: 3px solid #7B241C;*/
 }
 
