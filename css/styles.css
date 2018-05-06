@@ -2,10 +2,11 @@
 	box-sizing: border-box;
 }
 
+/* ------------ Etiquetas nativas ---------------------- */
+
 body{
 	margin:0;
 	font-family: sans-serif;
-	/*background: #EBF5FB;*/
 }
 
 h1, h2, h3{
@@ -18,6 +19,17 @@ header{
 	box-shadow: 1px 1px 5px #000;
 	height: 100px;
 }
+
+input{
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+/* ----------------------------------------------------------*/
+/* ------------ Etiquetas para clases ---------------------- */
 
 .form-register{
 	width: 95%;
@@ -47,14 +59,6 @@ header{
 	border: 1px solid black;
 }
 
-input{
-	margin-bottom: 15px;
-	padding: 15px;
-	font-size: 16px;
-	border-radius: 3px;
-	border: 1px solid gray;
-}
-
 .input-48{
 	width: 48%
 }
@@ -76,10 +80,59 @@ input{
 }
 
 .form_link{
-	width: 100%
-	margin:7px;
+	width: 100%;
+	margin: 7px;
 	text-align: center;
 	font-size: 14px;
+}
+
+.galeria2{
+	width: 350px;
+}
+
+.informacion{
+	font-family: verdana;
+	text-align: justify;
+}
+
+.bienvenido{
+	width: 100%;
+}
+
+.button {
+    background-color: #5D6D7E; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+ .informacion{
+	font-family: verdana;
+	text-align: justify;
+}
+
+ .informacion2{
+	font-family: verdana;
+	text-align: justify;
+	color: white;
+}
+
+/* ----------------------------------------------------------*/
+/* ------------ Etiquetas para id ---------------------- */
+
+#logo{
+	float: left;
 }
 
 #menu{
@@ -99,23 +152,37 @@ input{
 	background: black;
 }
 
-.galeria2{
-    width: 350px;
-}
-
 #centro{
-    text-align: center;
+	text-align: center;
     margin: auto;
     width: 50%;
     /*border: 3px solid #EC7063 ;*/
     padding: 10px;
- }
-
-.informacion{
-	font-family: verdana;
-	text-align: justify;
 }
 
-.bienvenido{
-	width: 100%;
+
+#formulario{
+    margin: auto;
+    width: 50;
+    max-width: 600px;
+    background: #F8F9F9;
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
 }
+
+#franja{
+    padding: 20px;
+    margin-top: 5px;
+    height: 100px;
+    background-color: black ;
+    /*border: 3px solid #7B241C;*/
+}
+
+#franja2{
+    margin-top: 5px;
+    height: 130px;
+    background-color: black ;
+    /*border: 3px solid #7B241C;*/
+}
+
