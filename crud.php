@@ -5,7 +5,7 @@ $username = "arsdiffu_adminWB";
 $password = "adminadminadmin";
 $DB = "arsdiffu_WebDB";
 
-$conexion = new mtsqli($server, $username, $password, $DB);
+$conexion = new mysqli($server, $username, $password, $DB);
 
 if($conexion){
 	return $conexion;
