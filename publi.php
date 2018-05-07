@@ -1,4 +1,17 @@
+
+
 <?php
+
+	#include("php/new_pub.php");
+
+	session_start();
+	$sesion_actual= $_SESSION['id'];
+
+	if(!($sesion_actual)){
+		header('location: index.php');
+		die();	
+	}
+
 	require 'php/conexion.php';
 				
 	if(!$conexion ) {
@@ -7,11 +20,29 @@
 
 	#echo 'Connected successfully'."<br>";
 
-	$id = "1"; #Modificar para que sea el id del usuario que tenga la sesion iniciada
+	$id = $_SESSION['id']; #Modificar para que sea el id del usuario que tenga la sesion iniciada
 
-	$sql = "SELECT publicacion FROM publicaciones WHERE id_usuario='".$id."'";
+	$sql = "SELECT publicacion FROM publicaciones WHERE id_usuario='".$sesion_actual."'";
 
 	$result = mysqli_query($conexion, $sql);
+
+    function insertar_pub($sesion_actual){
+        require 'conexion.php';
+        //Recibimos datos del html
+
+        $id = $sesion_actual;
+
+        $pub = $_POST["pub"];
+
+        $insertar = "INSERT INTO publicaciones (id_usuario, publicacion) VALUES ('$id', '$pub')";
+        //guardar en BD
+        $resultado = mysqli_query($conexion, $insertar);
+        mysqli_close($conexion);
+        header('location: ../publi.php');
+    }
+
+
+
 
 ?>
 
@@ -44,14 +75,14 @@
 
 	<div id = "centro">
 
-		<form action="php/new_pub.php" method="post" class="form-register"> 
+		<form method="post" action="php/new_pub.php" class="form-register"> 
 			<h2 class="form_titulo">
 				Nueva Publicacion
 			</h2>
 
 			<div class="contenedor-inputs">
 				<input type="text" id="pub" name="pub" placeholder="Publicacion" class="input-100">
-				<input type="submit" value="Publish" class="btn-enviar" onclick= "validar();">
+				<input type="submit" value="Publish" class="btn-enviar" >
 			</div>
 
 		</form>
