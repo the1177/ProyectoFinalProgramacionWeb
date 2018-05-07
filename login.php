@@ -36,15 +36,16 @@ require 'crud.php';
 	<br/>
 
 	<h1>Log In</h1>
-	 <form action="validacion.php" method="post" class="form-register"> 
+	 <form class="form-register" action="/php/inicio_sesion.php" method="post"> 
 		<h2 class="form_titulo">
 			Inicio de sesión
 		</h2>
 
 		<div class="contenedor-inputs">
-			<input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-100">
+			<input type="text" id="correo" name="correo" placeholder="Correo" class="input-100">
 			<input type="password" id="password" name="password" placeholder="Contraseña" class="input-100">
-			<input type="submit" value="Acceder" class="btn-enviar">
+			
+			<input type="submit" value="Acceder" class="btn-enviar" name="submitLogin">
 
 			<br/><br/>
 			<p class="form_link">¿Aún no tienes una cuenta? <a href=registro.html> Regístrate aqui</a></p>
