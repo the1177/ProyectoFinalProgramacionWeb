@@ -1,19 +1,12 @@
 <?php
-
- 
     require 'conexion.php';
-        //Recibimos datos del html
+    include("auth.php");
 
-    session_start();
-    $sesion_actual= $_SESSION['id'];
-    
-    if(!($sesion_actual)){
-        header('location: index.php');
-        die();	
-    }
+    // Debugger
+    ini_set('display_errors', 1);
 
-    $id = $sesion_actual;
-
+    //Recibimos datos del html
+    $id = $sesion_actual; #Modificar con el id del usuario con la sesion iniciada
     $pub = $_POST["pub"];
 
     $insertar = "INSERT INTO publicaciones (id_usuario, publicacion) VALUES ('$id', '$pub')";
@@ -21,7 +14,4 @@
     $resultado = mysqli_query($conexion, $insertar);
     mysqli_close($conexion);
     header('location: ../publi.php');
-
-
-
 ?>
