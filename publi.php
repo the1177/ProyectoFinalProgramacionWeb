@@ -7,7 +7,7 @@
 
 	#echo 'Connected successfully'."<br>";
 
-	$id = "4"; #Modificar para que sea el id del usuario que tenga la sesion iniciada
+	$id = "1"; #Modificar para que sea el id del usuario que tenga la sesion iniciada
 
 	$sql = "SELECT publicacion FROM publicaciones WHERE id_usuario='".$id."'";
 
@@ -43,6 +43,19 @@
 	</header>
 
 	<div id = "centro">
+
+		<form action="new_pub.php" method="post" class="form-register"> 
+			<h2 class="form_titulo">
+				Nueva Publicacion
+			</h2>
+
+			<div class="contenedor-inputs">
+				<input type="text" id="pub" name="pub" placeholder="Publicacion" class="input-100">
+				<input type="submit" value="Publish" class="btn-enviar" onclick= "validar();">
+			</div>
+
+		</form>
+
 		<h1> Publicaciones </h1>
 		<br></br>
 
