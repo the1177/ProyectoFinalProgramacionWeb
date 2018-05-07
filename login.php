@@ -6,7 +6,6 @@
 	<meta name="keywords" content="Universidad">
 	<title>Register</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script type="text/javascript" src="js/validacion.js"></script>
 
 </head>
 
@@ -28,20 +27,18 @@
 	<br></br>
 	<br></br>
 
-	<h1>Formulario de Registro</h1>
+	<h1>Log In</h1>
 
-	<form action="php/registrar_BD.php" method="post" class="form-register"> 
+	 <form action="php/inicio_sesion.php" method="post" class="form-register"> 
 	<!--<form class="form-register"> !-->
 		<h2 class="form_titulo">
-			Registro de cuenta
+			Inicio Sesion
 		</h2>
 
 		<div class="contenedor-inputs">
-			<input type="email" id="correo" name="correo" placeholder="Correo" class="input-100">
-			<input type="password" id="pass1" name="pass1" placeholder="Contraseña" class="input-48">
-			<input type="password" id="pass2" name="pass2" placeholder="Repite Contraseña" class="input-48">
-			<input type="submit" value="Crear" class="btn-enviar" onclick= "validar();">
-			<p class="form_link">¿Ya tienes una cuenta? <a href=login.html> Ingresa aqui</a></p>
+			<input type="email" id="correo" name="correo" placeholder="correo" class="input-100">
+			<input type="password" id="password" name="password" placeholder="password" class="input-100">
+			<input type="submit" value="Acceder" class="btn-enviar">
 		</div>
 
 	</form>

@@ -1,5 +1,5 @@
 <?php
-	require 'conexion.php';
+	require 'php/conexion.php';
 				
 	if(!$conexion ) {
 		die('Could not connect: ' . mysqli_error());
@@ -44,7 +44,7 @@
 
 	<div id = "centro">
 
-		<form action="new_pub.php" method="post" class="form-register"> 
+		<form action="php/new_pub.php" method="post" class="form-register"> 
 			<h2 class="form_titulo">
 				Nueva Publicacion
 			</h2>
