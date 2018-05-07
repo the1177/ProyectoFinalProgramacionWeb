@@ -41,13 +41,16 @@ function sesion(){
 		
 	}
 
-	// Obtener nombre del usuario para la sesión
-	$consultaNombre = "SELECT nombre FROM usuarios WHERE correo='$correo' ";
+	// Obtener nombre del usuario para la sesión y su id
+	$consultaNombre = "SELECT nombre, id FROM usuarios WHERE correo='$correo' ";
 	$resultadNombre = $conexion->query($consultaNombre);
 	$inforDelNombre = $resultadNombre->fetch_assoc();
 	$obtenidoNombre = $inforDelNombre['nombre'];
+	$obtenidoId = $inforDelNombre['id'];
 
 	$_SESSION['username'] = $obtenidoNombre;
+	$_SESSION['correo'] = $correo;
+	$_SESSION['id'] = $obtenidoId;
 
 
 	$info = $result->fetch_assoc();

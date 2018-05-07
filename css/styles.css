@@ -130,6 +130,13 @@ input{
 	color: white;
 }
 
+.perfil{
+	padding: 10px 30px;
+	justify-content: space-between;
+	border: 1px solid black;
+	background-color: rgb(179, 179, 179);
+}
+
 /* ----------------------------------------------------------*/
 /* ------------ Etiquetas para id ---------------------- */
 

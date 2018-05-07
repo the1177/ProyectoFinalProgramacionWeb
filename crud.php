@@ -1,7 +1,7 @@
 <?php
 
 // Debugger
-//ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 
 ## ---------------------------------- Funciones ----------------------------------------------------- ##
 function insert(){
@@ -44,6 +44,10 @@ function insert(){
 
 			# Guardar en BD
 			$resultado = mysql_query($insert) or die(mysql_error()."<br />".$insert);
+
+			// Para crear registro en tabla info
+			mysql_query("INSERT INTO info (correo) VALUES ('$correo')");
+			
 
 			if($resultado){
 				//echo("-- ENTER 1 --");
