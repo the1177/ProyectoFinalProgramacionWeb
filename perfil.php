@@ -87,7 +87,7 @@
 	</div>
 
 
-    <h2> Para editar tu información, haz click <a href src="editaPerfil.php"> aquí. </a> <h2>
+    <h2> Para editar tu información, haz click <a href="editaPerfil.php"> aquí. </a><h2>
 
 	<br/>
 	<br/>

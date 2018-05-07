@@ -13,7 +13,6 @@
     $result= $conexion->query($consulta);
     
     $grial = $result->fetch_assoc();
-
 ?>
 
 <!DOCTYPE html>
@@ -53,38 +52,42 @@
 	<div id ="centro" class="perfil">
 		<h1 class="form_titulo"> Bienvenido  <?php echo $_SESSION['username']; ?> </h1>
         <br/>
-        <h1> Tu perfil </h1>
+        <h1> Editar tu perfil </h1>
+        <br/>
+    <form class="form-register" action="/php/crudPerfil.php" method="post">
+        <input type="text" name="nombre" value="<?php echo $grial['nombre']; ?>" />
         <br/>
         
-        <h3> Nombre; <?php echo $grial['nombre']; ?> <h3>
+        <input type="text" name="apellido" value="<?php echo $grial['apellido']; ?>" />
         <br/>
         
-        <h3> Apellidos; <?php echo $grial['apellidos']; ?> <h3>
+        <input type="date" name="fechaRegistro" value="<?php echo $grial['fechaRegistro']; ?>" />
         <br/>
         
-        <h3> Fecha de registro; <?php echo $grial['fechaRegistro']; ?> <h3>
+        <input type="text" name="ciudad" value="<?php echo $grial['ciudad']; ?>" />
         <br/>
         
-        <h3> Ciudad; <?php echo $grial['ciudad']; ?> <h3>
+        <input type="text" name="pais" value="<?php echo $grial['pais']; ?>" />
         <br/>
         
-        <h3> Pais; <?php echo $grial['pais']; ?> <h3>
+        <input type="text" name="idioma" value="<?php echo $grial['idioma']; ?>" />
         <br/>
         
-        <h3> Idioma; <?php echo $grial['idioma']; ?> <h3>
+        <input type="text" name="facebook" value="<?php echo $grial['facebook']; ?>" />
         <br/>
         
-        <h3> Facebook; <?php echo $grial['facebook']; ?> <h3>
-        <br/>
-        
-        <h3> Twitter; <?php echo $grial['twitter']; ?> <h3>
+        <input type="text" name="twitter" value="<?php echo $grial['twitter']; ?>" />
         <br/>
 
-        <h3> GitHub; <?php echo $grial['github']; ?> <h3>
+        <input type="text" name="github" value="<?php echo $grial['github']; ?>" />
 		<br/>
+        <br/>
+
+        <input type="submit" value="Actualizar perfil" class="btn-enviar" name="submitActualizar">
         
-		<br/>
-	</div>
+    </form>        
+    </div>
+    
 
 
 	<br/>
