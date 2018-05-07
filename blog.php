@@ -52,7 +52,7 @@ include("auth.php");
 
 	<footer>
 		<div id="franja">
-			<p id="textoFooter">MySpaceIn © - 2018.</p>
+			<p id="textoFooter">MySpaceIn © - 2018. </p>
 		</div>
 	</footer>
 

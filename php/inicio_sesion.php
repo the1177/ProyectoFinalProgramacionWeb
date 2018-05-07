@@ -72,7 +72,6 @@ function sesion(){
 	
 }
 
-
 if(isset($_POST['submitLogin']))
 {
 	sesion();

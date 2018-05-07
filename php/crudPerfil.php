@@ -65,12 +65,9 @@
 
     }
 
-
 if(isset($_POST['submitActualizar']))
 {
     actualizar();        
 } 
-
-
 
 ?>
