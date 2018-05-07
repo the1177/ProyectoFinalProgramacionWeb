@@ -1,3 +1,7 @@
+<?php
+require 'crud.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -23,7 +27,7 @@
 		<div id="menu">
 			<ul>
 				<a href="index.html"> Index </a>
-				<a href="login.html"> Log In </a>
+				<a href="login.php"> Log In </a>
 				<a href="registro.php"> Register </a>
 			</ul>
 		</div>
@@ -41,15 +45,20 @@
 			<input type="text" id="usuario" name="usuario" placeholder="Usuario" class="input-100">
 			<input type="password" id="password" name="password" placeholder="Contraseña" class="input-100">
 			<input type="submit" value="Acceder" class="btn-enviar">
+
+			<br/><br/>
+			<p class="form_link">¿Aún no tienes una cuenta? <a href=registro.html> Regístrate aqui</a></p>
 		</div>
 	</form>
 
 	<br/>
 	<br/>
+	<br/>
+	<br/>
 
 	<footer>
 		<div id="franja">
-			<p>MySpaceIn © - 2018.</p>
+			<p id="textoFooter">MySpaceIn © - 2018.</p>
 		</div>
 	</footer>
 

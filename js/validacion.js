@@ -9,11 +9,7 @@ function validar(){
         alert("Debes ingresar un correo válido.");
         return -1;
 
-    }else if(!expresion.test(email)){
-
-        alert("Correo invalido.");
-        return false;
-    } 
+    }
 
     if (pass1 == ""){
         alert("Ingresa contraseña.");
