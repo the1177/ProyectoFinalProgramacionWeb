@@ -48,7 +48,7 @@ require 'crud.php';
 			<input type="submit" value="Acceder" class="btn-enviar" name="submitLogin">
 
 			<br/><br/>
-			<p class="form_link">¿Aún no tienes una cuenta? <a href=registro.html> Regístrate aqui</a></p>
+			<p class="form_link">¿Aún no tienes una cuenta? <a href=registro.php> Regístrate aqui</a></p>
 		</div>
 	</form>
 

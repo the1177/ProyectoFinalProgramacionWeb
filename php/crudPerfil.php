@@ -3,7 +3,7 @@
     include("../auth.php");
 
     // Debugger
-    ini_set('display_errors', 1);
+    //ini_set('display_errors', 1);
 
     $correoId = $_SESSION['correo'];
 
@@ -27,7 +27,7 @@
 
         $nombre = $_POST["nombre"];
         
-        $apellido = $_POST["apellido"];
+        $apellidos = $_POST["apellidos"];
         
         $fechaRegistro = $_POST["fechaRegistro"];
         
@@ -46,7 +46,7 @@
 
         $updateMasivo = ("UPDATE info SET
                                 nombre = '$nombre',
-                                apellido = '$apellido',
+                                apellidos = '$apellidos',
                                 fechaRegistro = '$fechaRegistro',
                                 ciudad = '$ciudad',
                                 pais = '$pais',
@@ -60,7 +60,7 @@
 
         if($resultadoUpdate)
         {
-            echo "<html><meta http-equiv=\"refresh\" content=\"3;URL='perfil.php'\"> <center><h1> Perfil editado correctamente. </h1><br> <h2> Redireccionando... </h2></center> </html>";
+            echo "<html><meta http-equiv=\"refresh\" content=\"3;URL='../perfil.php'\"> <center><h1> Perfil editado correctamente. </h1><br> <h2> Redireccionando... </h2></center> </html>";
         }
 
     }

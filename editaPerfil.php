@@ -4,7 +4,7 @@
     require "php/conexion.php";
 
     // Debugger
-    ini_set('display_errors', 1);
+    //ini_set('display_errors', 1);
 
     $correoId = $_SESSION['correo'];
 
@@ -55,10 +55,11 @@
         <h1> Editar tu perfil </h1>
         <br/>
     <form class="form-register" action="/php/crudPerfil.php" method="post">
+
         <input type="text" name="nombre" value="<?php echo $grial['nombre']; ?>" />
         <br/>
         
-        <input type="text" name="apellido" value="<?php echo $grial['apellido']; ?>" />
+        <input type="text" name="apellidos" value="<?php echo $grial['apellidos']; ?>" />
         <br/>
         
         <input type="date" name="fechaRegistro" value="<?php echo $grial['fechaRegistro']; ?>" />

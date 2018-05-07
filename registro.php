@@ -54,7 +54,7 @@ require 'crud.php';
 			<input type="password" id="pass2" name="pass2" placeholder="Repite Contraseña" class="input-48">
 
 			<input type="submit" value="Registrarse" class="btn-enviar" onclick= "validar()" name="submitRegistro">
-			<p class="form_link">¿Ya tienes una cuenta? <a href=login.html> Ingresa aqui</a></p>
+			<p class="form_link">¿Ya tienes una cuenta? <a href=login.php> Ingresa aqui</a></p>
 		</div>
 	</form>
 
