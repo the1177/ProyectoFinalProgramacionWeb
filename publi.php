@@ -25,25 +25,6 @@
 	$sql = "SELECT publicacion FROM publicaciones WHERE id_usuario='".$sesion_actual."'";
 
 	$result = mysqli_query($conexion, $sql);
-
-    function insertar_pub($sesion_actual){
-        require 'conexion.php';
-        //Recibimos datos del html
-
-        $id = $sesion_actual;
-
-        $pub = $_POST["pub"];
-
-        $insertar = "INSERT INTO publicaciones (id_usuario, publicacion) VALUES ('$id', '$pub')";
-        //guardar en BD
-        $resultado = mysqli_query($conexion, $insertar);
-        mysqli_close($conexion);
-        header('location: ../publi.php');
-    }
-
-
-
-
 ?>
 
 
